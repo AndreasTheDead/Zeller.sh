@@ -1,3 +1,4 @@
+import { searchPlugin } from "@vuepress/plugin-search";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
@@ -13,6 +14,11 @@ export default defineUserConfig({
       description: "Here I write about Projects or Topics I stumble about while building my Homelab.",
     },
   },
+  plugins: [
+    searchPlugin({
+      // your options
+    }),
+  ],
 
   theme,
 
