@@ -17,6 +17,7 @@ export default hopeTheme({
 
   repoDisplay: true,
   repo: "AndreasTheDead/Zeller.sh",
+  editLink: false,
 
   navbarAutoHide: "always",
 
