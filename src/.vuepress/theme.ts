@@ -13,13 +13,25 @@ export default hopeTheme({
 
   iconAssets: "iconfont",
   favicon: "/logo.png",
-  logo: "/logo.svg",
+  
 
-  repoDisplay: true,
-  repo: "AndreasTheDead/Zeller.sh",
+  //Navbar settings https://theme-hope.vuejs.press/config/theme/layout.html#navbar-config
+  
+  navbarIcon: true,
+  
   editLink: false,
 
+  logo: "/logo.png",
+  logoDark: "/logo.png",
+  
+  repo: "AndreasTheDead/Zeller.sh",
+  repoDisplay: true,
+
   navbarAutoHide: "always",
+  hideSiteNameOnMobile: true,
+
+  //Sitebar Config
+
 
   pageInfo: ["Author", "Date", "Category", "Tag", "ReadingTime"],
   docsDir: "docs",
@@ -51,7 +63,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "Junior System Engineer <br> Working on Intune, (Azure) Active Directory and whatever I find intresting about.",
+        description: "Junior System Engineer <br> Working on Intune, (Azure) Active Directory and whatever I find interest in.",
         //intro: "/intro.html",
         roundAvatar: true,
         avatar: "/avatar.png",
