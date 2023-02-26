@@ -8,12 +8,11 @@ export default hopeTheme({
 
   author: {
     name: "Andreas Zeller",
-    url: "https://zeller.sh",
+    url: "https://zeller.sh/whoami.html",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "fontawesome-with-brands",
   favicon: "/logo.png",
-  
 
   //Navbar settings https://theme-hope.vuejs.press/config/theme/layout.html#navbar-config
   
@@ -33,7 +32,7 @@ export default hopeTheme({
   //Sitebar Config
 
 
-  pageInfo: ["Author", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: ["Author", "Date", "Category", "Tag"],
   docsDir: "docs",
 
   darkmode: "switch",
@@ -92,12 +91,17 @@ export default hopeTheme({
       excerptLength: 300,
     },
 
+
     /*
     comment: {
       // @ts-expect-error: You should generate and use your own comment service
       provider: "Giscus",
     },
     */
+    prismjs: {
+      dark: "one-dark",
+      light: "one-light",
+    },
 
     copyright: {
       author: "Andreas Zeller",
@@ -129,6 +133,7 @@ export default hopeTheme({
       katex: true,
       mark: true,
       mermaid: true,
+      footnote: true,
       playground: {
         presets: ["ts", "vue"],
       },
