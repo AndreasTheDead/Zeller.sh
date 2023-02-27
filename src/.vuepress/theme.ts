@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { enNavbar } from "./navbar/index.js";
+import { enSidebar } from "./sidebar/index.js";
 
 //Theme Config https://vuepress-theme-hope.github.io/v2/config/theme/
 export default hopeTheme({
@@ -29,8 +29,15 @@ export default hopeTheme({
   navbarAutoHide: "always",
   hideSiteNameOnMobile: true,
 
-  //Sitebar Config
+  // Set footer options
+  displayFooter: false,
+  footer: "",
 
+  // navbar
+  navbar: enNavbar,
+
+  // sidebar
+  sidebar: enSidebar,
 
   pageInfo: ["Author", "Date", "Category", "Tag"],
   docsDir: "docs",
@@ -42,35 +49,14 @@ export default hopeTheme({
   print: false,
 
   blog: {
+    description: "Junior System Engineer <br> Working on Intune, (Azure) Active Directory and whatever I find interest in.",
+    //intro: "/intro.html",
+    roundAvatar: true,
+    avatar: "/avatar.png",
     medias: {
       Email: "mailto:Andreas@zeller.sh",
       GitHub: "https://github.com/AndreasTheDead",
       Linkedin: "www.linkedin.com/in/andreas-zeller",
-    },
-  },
-
-  locales: {
-    "/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      blog: {
-        description: "Junior System Engineer <br> Working on Intune, (Azure) Active Directory and whatever I find interest in.",
-        //intro: "/intro.html",
-        roundAvatar: true,
-        avatar: "/avatar.png",
-      },
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
     },
   },
 
@@ -90,7 +76,6 @@ export default hopeTheme({
       excerptSeparator: "<!-- more -->",
       excerptLength: 300,
     },
-
 
     /*
     comment: {
