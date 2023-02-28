@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar } from "./navbar/index.js";
-import { enSidebar } from "./sidebar/index.js";
+import { DefaultNavbar } from "./menues/navbar.js";
+//import { ArticleSidebar } from "./menues/sidebar.js"
 
 //Theme Config https://vuepress-theme-hope.github.io/v2/config/theme/
 export default hopeTheme({
@@ -34,10 +34,11 @@ export default hopeTheme({
   footer: "",
 
   // navbar
-  navbar: enNavbar,
+  navbar: DefaultNavbar,
 
-  // sidebar
-  sidebar: enSidebar,
+  // sidebar https://theme-hope.vuejs.press/guide/layout/sidebar.html
+  //sidebar: enSidebar, 
+  sidebar: false,
 
   pageInfo: ["Author", "Date", "Category", "Tag"],
   docsDir: "docs",
@@ -48,7 +49,8 @@ export default hopeTheme({
   backToTop: true,
   print: false,
 
-  blog: {
+  blog: { //
+    sidebarDisplay: "always",
     description: "Junior System Engineer <br> Working on Intune, (Azure) Active Directory and whatever I find interest in.",
     //intro: "/intro.html",
     roundAvatar: true,
@@ -74,7 +76,7 @@ export default hopeTheme({
     blog:{
       excerpt: true,
       excerptSeparator: "<!-- more -->",
-      excerptLength: 300,
+      excerptLength: 150,
     },
 
     /*
