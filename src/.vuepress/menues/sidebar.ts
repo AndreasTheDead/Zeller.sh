@@ -1,6 +1,7 @@
+/*
 import { sidebar } from "vuepress-theme-hope";
 
-export const enSidebar = sidebar({
+export const ArticleSidebar = sidebar({
   "/": [
     "",
     {
@@ -13,10 +14,11 @@ export const enSidebar = sidebar({
     {
       text: "Articles",
       icon: "note",
-      prefix: "posts/",
+      prefix: "article/",
       children: "structure",
     },
     "intro",
     "slides",
   ],
 });
+*/
