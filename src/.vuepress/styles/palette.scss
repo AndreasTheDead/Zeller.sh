@@ -1,2 +1,10 @@
 // you can change colors here
+// https://theme-hope.vuejs.press/config/style.html#palette-scss
 $theme-color: #b42000;
+$text-color: (
+  light: #2c3e50,
+  dark: #9e9e9e,
+);
+
+//size:
+$content-width: 90vh;
