@@ -109,6 +109,15 @@ export default hopeTheme({
         "YouTube"
       ]
     },
+    comment: {
+      provider: "Waline",
+      serverURL: "https://comments.zeller.sh/",
+      dark: "body.theme-dark",
+      meta: ['nick','mail'],
+      requiredMeta: ['nick'],
+      login: "disable",
+      reaction: false
+    },
 
 
     // all features are enabled for demo, only preserve features you need here
