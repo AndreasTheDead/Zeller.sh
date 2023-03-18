@@ -5,44 +5,20 @@ icon: home
 title: Home
 heroImage: /logo.png
 heroText: Zeller.sh
-tagline: Everything that interests myself.
+heroalt: The Zeller.sh Logo
+heroImageStyle: hero-shadow
+tagline: Everything that interests me.
 heroFullScreen: true
+bgImage: /header.jpg
 projects:
-  - icon: project
-    name: project name
-    desc: project detailed description
-    link: https://your.project.link
+  - icon: /avatar.png
+    name: Who am I
+    desc: Some information about myself.
+    link: /whoami.html
 
-  - icon: link
-    name: link name
-    desc: link detailed description
-    link: https://link.address
+  - icon: code
+    name: PowerShell
+    desc: My Powershell posts.
+    link: /category/powershell
 
-  - icon: book
-    name: book name
-    desc: Detailed description of the book
-    link: https://link.to.your.book
-
-  - icon: article
-    name: article name
-    desc: Detailed description of the article
-    link: https://link.to.your.article
-
-  - icon: friend
-    name: friend name
-    desc: Detailed description of friend
-    link: https://link.to.your.friend
-
-  - icon: /logo.png
-    name: custom item
-    desc: Detailed description of this custom item
-    link: https://link.to.your.friend
-
-footer: customize your footer text
 ---
-
-This is a blog home page demo.
-
-To use this layout, you should set both `layout: BlogHome` and `home: true` in the page front matter.
-
-For related configuration docs, please see [blog homepage](https://theme-hope.vuejs.vuepress/guide/blog/home/).
