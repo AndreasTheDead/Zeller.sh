@@ -22,7 +22,7 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 
 - 07/2018 - Finished School with Abitur.
 - 08/2018 - 01/2021: Trainee for Fachinformatiker für Systemintegration (Sysadmin)
-- 01/2022 - Current: Working on PKI/Active Directory Domain Services/File Access Managment/AzureAD/Intune (Windows) for ~7000 user accounts/4000 Windows devices and Up to 10 Domains
+- 01/2022 - Current: Working on PKI/Active Directory Domain Services/File Access Management/AzureAD/Intune (Windows) for ~7000 user accounts/4000 Windows devices and Up to 10 Domains
 
 ## Notable Projects that I worked on at Work:
 
@@ -44,7 +44,7 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 - Smarthome with Homeassistant
 - [Dynamic DNS via PowerShell script and AzureDNS](/article/powershell/dynamicazuredns.html)
 - This webpage
-- other small Apps like, Reverse Proxy, recipes app, Jellyfin, phpIPAM...
+- other small Apps like a Reverse Proxy, a recipe app, Jellyfin, phpIPAM...
 
 ### Hardware:
 
