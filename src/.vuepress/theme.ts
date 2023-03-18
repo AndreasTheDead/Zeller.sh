@@ -8,7 +8,7 @@ export default hopeTheme({
 
   author: {
     name: "Andreas Zeller",
-    url: "https://zeller.sh/whoami.html",
+    url: "/whoami.html",
   },
 
   iconAssets: "fontawesome-with-brands",
@@ -40,7 +40,7 @@ export default hopeTheme({
   //sidebar: enSidebar, 
   sidebar: false,
 
-  pageInfo: ["Author", "Date", "Category", "Tag"],
+  pageInfo: ["Author", "Date","PageView", "Category", "Tag"],
   //docsDir: "docs",
   docsDir: "src",
 
@@ -51,9 +51,9 @@ export default hopeTheme({
   print: false,
 
   blog: { //
-    sidebarDisplay: "always",
+    //sidebarDisplay: "always",
     description: "Junior System Engineer <br> Working on Intune, (Azure) Active Directory and whatever I find interest in.",
-    //intro: "/intro.html",
+    intro: "/whoami.html",
     roundAvatar: true,
     avatar: "/avatar.png",
     medias: {
@@ -116,7 +116,8 @@ export default hopeTheme({
       meta: ['nick','mail'],
       requiredMeta: ['nick'],
       login: "disable",
-      reaction: false
+      reaction: false,
+      wordLimit: 250
     },
 
 
@@ -127,14 +128,14 @@ export default hopeTheme({
       chart: true,
       codetabs: true,
       container: true,
-      demo: true,
+      demo: false,
       echarts: true,
       figure: true,
       flowchart: true,
       gfm: true,
       imgLazyload: true,
       imgSize: true,
-      include: true,
+      include: false,
       katex: true,
       mark: true,
       mermaid: true,
@@ -162,7 +163,8 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true,
+      vuePlayground: false,
+      linkCheck: "dev",
     },
   },
 });
