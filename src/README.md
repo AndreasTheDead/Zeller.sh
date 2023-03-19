@@ -21,4 +21,8 @@ projects:
     desc: My Powershell posts.
     link: /category/powershell
 
+  - icon: cloud
+    name: Azure
+    desc: My Azure posts.
+    link: /category/azure
 ---
