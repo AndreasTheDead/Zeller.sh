@@ -92,8 +92,7 @@ export default hopeTheme({
     },
 
     copyright: {
-      author: "Andreas Zeller",
-      global: true,
+      global: false,
     },
     feed:{
       atom: true,
