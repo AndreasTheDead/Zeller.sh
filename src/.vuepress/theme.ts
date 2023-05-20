@@ -40,7 +40,7 @@ export default hopeTheme({
   //sidebar: enSidebar, 
   sidebar: false,
 
-  pageInfo: ["Author", "Date","PageView", "Category", "Tag"],
+  pageInfo: ["Author", "Date", "Category", "Tag"],
   //docsDir: "docs",
   docsDir: "src",
 
@@ -163,7 +163,7 @@ export default hopeTheme({
       tabs: true,
       vPre: true,
       vuePlayground: false,
-      linkCheck: "dev",
+      //linkCheck: "dev",
     },
   },
 });
