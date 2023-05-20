@@ -73,6 +73,10 @@ export default hopeTheme({
   */
   
   plugins: {
+    git:{
+      contributors: false,
+      updatedTime: true
+    },
     //blog: true,
     blog:{
       excerpt: true,
