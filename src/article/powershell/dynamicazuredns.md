@@ -1,7 +1,6 @@
 ---
 icon: code
-date: 2023-03-19
-author: Andreas Zeller
+date: 2023-05-20
 category:
   - Powershell
   - Azure
@@ -14,9 +13,9 @@ tag:
 
 # Use Dynamic DNS with Azure DNS zones
 
-I wanted to use Azure DNS Zones for my personal domains. The problem I noticed, was that I cannot use a CName record at the root of a Domain, but because my Website and some more stuff is hosted at my home where I have a dynamic IP adress I needed to find a solution to update an Azure DNS A-Record when my IP Adress changes.
+I wanted to use Azure DNS Zones for my personal domains. The problem I noticed was, that I cannot use a CName record at the root of a Domain. To host my Website and some more stuff at my home, where I have a dynamic IP adress, I needed to find a way to update a Azure DNS A-Record when my Public IP Adress changes.
 
-The solution I decided on was to use a scheduled Powershell Script.
+The solution I decided to use, was to create a powershell script which is scheduled and updates the DNS records on IP change.
 
 ## Requirements
 
@@ -206,3 +205,33 @@ if($currentPublicIP -ne $CachedPublicIP){
 </details>
 
 ### Schedule Script
+
+To schedule the script under Windows you can use the taskscheduler.
+
+To do that open the Task Scheduler and make a right click on the "Task Scheduler Library" and select "Create Task..."
+
+![Create Task](/images/dynamicazuredns/CreateTask.png)
+
+Enter a Name for the Task and select the running Useraccount as System.
+
+![Task General Options](/images/dynamicazuredns/TaskGeneral.png)
+
+Then switch to Triggers and select "New..."
+
+There select "**Daily**", "Recur every **1 days**", "Repeat task every **5 minutes** for a duration of **1 day**" and **enabled**.
+Confirm this with OK.
+
+![Task Trigger](/images/dynamicazuredns/TaskTrigger.png)
+
+Now go to the Action Task and click "New...".
+Select **Start a program** as action.
+
+Enter ```Powershell``` as Program/Script and ```-File "<PathToFile.ps1>" -ExecutionPolicy Unrestricted``` as arguments.
+
+Confirm this with OK.
+
+![Task Action](/images/dynamicazuredns/TaskAction.png)
+
+Now you can create the Task with **OK**.
+
+The script will run every 5 min check if the public IP changed and if this is the case, changes the DNS record in Azure.
