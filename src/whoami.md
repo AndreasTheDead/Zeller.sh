@@ -33,6 +33,7 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
     - Multiple Small Scripts to speed up the rebuild
 - Clean up Existing Windows Intune environment and take over management and part of the Packaging
 - Many Scripts to report little things in the AD to help us, keep a clean Active Directory
+- Deployment of Defender for Endpoint for Clients and Servers
 
 ## Homelab
 
