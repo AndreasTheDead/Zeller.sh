@@ -83,7 +83,6 @@ export default hopeTheme({
       excerptSeparator: "<!-- more -->",
       excerptLength: 150,
     },
-
     /*
     comment: {
       // @ts-expect-error: You should generate and use your own comment service
@@ -121,6 +120,10 @@ export default hopeTheme({
       login: "disable",
       reaction: false,
       wordLimit: 250
+    },
+    sitemap: {
+      changefreq: "weekly",
+      excludeUrls: ['LegalNotice.html']
     },
 
 
