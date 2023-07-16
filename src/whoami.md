@@ -9,7 +9,7 @@ comment: false
 
 # Who am I
 
-I'm a 24-year-old IT engineer from Germany.
+I'm a 25-year-old IT engineer from Germany.
 I was Trainee and now work in a company with around 13 000 Employees from which around 7 000 are working with AD Accounts.
 
 In my team, I am the go-to person if some things need to get automated with PowerShell. This can be a simple task like a weekly report about AD topics, the creation of 50 Distribution Groups or bigger things like the Creation and assignment of File ACL Groups for a Network Share. I also manage Scripts to install software via Intune or create Proactive Remediation to do things that are not possible over native Intune ways.
