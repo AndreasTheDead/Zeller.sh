@@ -33,10 +33,15 @@ jobs:
       # run build script
       - name: Build VuePress site
         run: pnpm docs:build
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: src/.vuepress/dist/
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: src/.vuepress/dist
+      #- name: Upload Pages artifact
+      #  uses: actions/upload-pages-artifact@v2
+      #  with:
+      #    path: src/.vuepress/dist/
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
       #- name: Deploy to GitHub Pages
