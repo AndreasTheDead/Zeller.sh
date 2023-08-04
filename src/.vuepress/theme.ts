@@ -111,7 +111,7 @@ export default hopeTheme({
         "YouTube"
       ]
     },
-    comment: {
+    /*comment: {
       provider: "Waline",
       serverURL: "https://comments.zeller.sh/",
       dark: "body.theme-dark",
@@ -120,7 +120,8 @@ export default hopeTheme({
       login: "disable",
       reaction: false,
       wordLimit: 250
-    },
+    },*/
+    comment: false,
     sitemap: {
       changefreq: "weekly",
       excludeUrls: ['LegalNotice.html']
