@@ -1,4 +1,5 @@
 import { searchPlugin } from "@vuepress/plugin-search";
+import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
@@ -9,11 +10,6 @@ export default defineUserConfig({
   title: "Zeller.sh",
   description: "Here I write about Projects or Topics I stumble about while building my Homelab.",
   
-  plugins: [
-    searchPlugin({
-      // your options
-    }),
-  ],
   head: [['link', {rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'}],
     ['link', {rel: 'icon', type: 'image/png', sizes:'32x32', href: '/favicon-32x32.png'}],
     ['link', {rel: 'icon', type: 'image/png', sizes: '16x16', href:'/favicon-16x16.png'}],
@@ -27,6 +23,6 @@ export default defineUserConfig({
     ],
 
   theme,
-
+  bundler: viteBundler(),
   shouldPrefetch: false,
 });

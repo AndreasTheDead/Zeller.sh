@@ -47,7 +47,6 @@ export default hopeTheme({
   darkmode: "switch",
   //themeColor: {orange: "#b42000",
   //            blue: "#2196f3"},
-  backToTop: true,
   print: false,
 
   blog: { //
@@ -77,12 +76,21 @@ export default hopeTheme({
       contributors: false,
       updatedTime: true
     },
+    search:{
+      locales: {
+        '/': {
+          placeholder: "Search"
+        }
+      },
+      hotKeys: ['s','/']
+    },
     //blog: true,
     blog:{
       excerpt: true,
       excerptSeparator: "<!-- more -->",
       excerptLength: 150,
     },
+    backToTop: true,
     /*
     comment: {
       // @ts-expect-error: You should generate and use your own comment service
@@ -108,7 +116,7 @@ export default hopeTheme({
         "Badge",
         "FontIcon",
         "PDF",
-        "YouTube"
+        "VidStack"
       ]
     },
     /*comment: {
@@ -124,7 +132,7 @@ export default hopeTheme({
     comment: false,
     sitemap: {
       changefreq: "weekly",
-      excludeUrls: ['LegalNotice.html']
+      excludePaths: ['/404.html','/LegalNotice.html']
     },
 
 
@@ -134,7 +142,6 @@ export default hopeTheme({
       attrs: true,
       chart: true,
       codetabs: true,
-      container: true,
       demo: false,
       echarts: true,
       figure: true,
@@ -150,7 +157,6 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",
