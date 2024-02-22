@@ -1,0 +1,31 @@
+media:
+  input: src/.vuepress/public/images
+  output: /images
+content:
+  - name: article
+    label: Article
+    type: collection
+    path: src/article
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - name: icon
+        label: Icon
+        description: Fontawsome Icon for the page
+        type: string
+      - name: data
+        label: Date
+        description: Date of the creation/update of the page
+        type: date
+        options:
+          format: YYYY-MM-DD
+        default:
+        hidden:
+      - name: category
+        label: Category
+        description: categorys of the article
+        type: object
+      - name: tag
+        label: Tag
+        description: Tags of the article
+        type: object
