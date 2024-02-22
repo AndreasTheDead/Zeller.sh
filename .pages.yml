@@ -29,3 +29,6 @@ content:
         label: Tag
         description: Tags of the article
         type: object
+      - name: body
+        label: Body
+        type: rich-text
