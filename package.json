@@ -12,17 +12,17 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.8",
-    "@vuepress/plugin-back-to-top": "2.0.0-rc.17",
-    "@vuepress/plugin-copy-code": "2.0.0-rc.17",
-    "@vuepress/plugin-feed": "2.0.0-rc.17",
-    "@vuepress/plugin-search": "2.0.0-rc.15",
-    "chart.js": "^4.4.1",
+    "@vuepress/plugin-back-to-top": "2.0.0-rc.18",
+    "@vuepress/plugin-copy-code": "2.0.0-rc.18",
+    "@vuepress/plugin-feed": "2.0.0-rc.18",
+    "@vuepress/plugin-search": "2.0.0-rc.18",
+    "chart.js": "^4.4.2",
     "echarts": "^5.5.0",
     "katex": "^0.16.9",
     "mermaid": "^10.8.0",
     "vidstack": "^1.10.9",
-    "vue": "^3.4.19",
+    "vue": "^3.4.21",
     "vuepress": "2.0.0-rc.8",
-    "vuepress-theme-hope": "2.0.0-rc.26"
+    "vuepress-theme-hope": "2.0.0-rc.27"
   }
 }
