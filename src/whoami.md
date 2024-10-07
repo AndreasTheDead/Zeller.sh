@@ -9,14 +9,14 @@ comment: false
 
 # Who am I
 
-I'm a 25-year-old IT engineer from Germany.
+I'm a 26-year-old IT engineer from Germany.
 I was Trainee and now work in a company with around 13 000 Employees from which around 7 000 are working with AD Accounts.
 
 In my team, I am the go-to person if some things need to get automated with PowerShell. This can be a simple task like a weekly report about AD topics, the creation of 50 Distribution Groups or bigger things like the Creation and assignment of File ACL Groups for a Network Share. I also manage Scripts to install software via Intune or create Proactive Remediation to do things that are not possible over native Intune ways.
 
 In my free time, I mostly like to game or work on my Homelab, as well as, go on hikes or meet my friends.
 
-## Work:
+## Work
 
 ### Career path
 
@@ -24,7 +24,7 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 - 08/2018 - 01/2021: Trainee for Fachinformatiker für Systemintegration (Sysadmin)
 - 01/2022 - Current: Working on PKI/Active Directory Domain Services/File Access Management/AzureAD/Intune (Windows) for ~7 000 user accounts/4 000 Windows devices and Up to 10 Domains
 
-## Notable Projects that I worked on at Work:
+## Notable Projects that I worked on at Work
 
 - Complete rebuild of Active Directory/PKI after a Cyberattack and helped the Attachment of newly setup Business and IT Applications.
   - Creation of Different Scripts to speed up the Rebuild
@@ -37,7 +37,7 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 
 ## Homelab
 
-### Projects:
+### Projects
 
 - Intune environment for learning and Testing, used on all my Private Windows Devices
 - Game server for Myself and Friends on Ubuntu with Pterodactyl
@@ -47,7 +47,7 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 - This webpage
 - other small Apps like a Reverse Proxy, a recipe app, Jellyfin, phpIPAM...
 
-### Hardware:
+### Hardware
 
 - Intune joined Gaming PC
 - QNAP TS-451D2 running TrueNAS Scale with 4x4TB Harddisk Space
@@ -58,7 +58,7 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 
 ### Software
 
-- Azure AD with one M365 Business Premium License to be able to use Defender/Intune/AAD
+- Microsft Entra with one M365 Business Premium License to be able to use Defender/Intune/Entra
 - Proxmox
 - TrueNAS Scale
 - Active Directory Domain for Intune SSO to NAS

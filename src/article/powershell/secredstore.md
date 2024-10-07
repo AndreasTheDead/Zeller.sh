@@ -21,6 +21,7 @@ toc: true
 Sometimes it's needed to use secrets or passwords in scheduled Powershell Scripts. Those secrets should not be written down in the script directly. To do that more securely the Powershell Secret Store should be used.
 
 With the Secret Store Module, the secrets can be securely saved on the Device. A secret saved by the Secret Store Module is encrypted and only the account which created the secret can read it.
+<!-- more -->
 
 Because of this, the best way to use a secret in a scheduled Script would be a [group Managed Service Account](https://learn.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview) with the secret saved by the Secret Store Module. How the module can be used, I will now explain.
 

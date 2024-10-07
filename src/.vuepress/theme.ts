@@ -16,7 +16,7 @@ export default hopeTheme({
 
   //Navbar settings https://theme-hope.vuejs.press/config/theme/layout.html#navbar-config
   
-  navbarIcon: true,
+  // navbarIcon: true,
   
   editLink: false,
 
@@ -51,9 +51,9 @@ export default hopeTheme({
 
   blog: { //
     //sidebarDisplay: "always",
-    description: "Junior System Engineer <br> Working on Intune, (Azure) Active Directory and whatever I find interest in.",
+    description: "Product Expert IAM <br> Working on Intune, (Azure) Active Directory and whatever I find interest in.",
     intro: "/whoami.html",
-    roundAvatar: true,
+    // roundAvatar: true,
     avatar: "/avatar.png",
     medias: {
       Email: "mailto:Andreas@zeller.sh",
@@ -90,18 +90,28 @@ export default hopeTheme({
       excerptSeparator: "<!-- more -->",
       excerptLength: 150,
     },
-    backToTop: true,
+    // backToTop: true,
     /*
     comment: {
       // @ts-expect-error: You should generate and use your own comment service
       provider: "Giscus",
     },
     */
+   /*
     prismjs: {
-      dark: "one-dark",
-      light: "one-light",
+      themes: { 
+        light: "one-light",
+        dark: "one-dark" 
+      },
+      highlightLines: true,
     },
-
+    */
+    shiki: {
+      themes:{
+        light: "one-light",
+        dark: "one-dark-pro" 
+      },
+    },
     copyright: {
       global: false,
     },
@@ -135,22 +145,37 @@ export default hopeTheme({
       excludePaths: ['/404.html','/LegalNotice.html']
     },
 
+    markdownMath: {
+      type: "katex"
+    },
+
+    markdownTab: {
+      codeTabs: true,
+      tabs: true
+    },
+
+    markdownImage: {
+      figure: true,
+      lazyload: true,
+      mark: true,
+      size: true
+    },
+    
+    backToTop:{
+      progress: true,
+      threshold: 100
+    },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
       attrs: true,
       chart: true,
-      codetabs: true,
       demo: false,
       echarts: true,
-      figure: true,
       flowchart: false,
       gfm: true,
-      imgLazyload: true,
-      imgSize: true,
       include: false,
-      katex: true,
       mark: true,
       mermaid: true,
       footnote: true,
@@ -172,7 +197,6 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-      tabs: true,
       vPre: true,
       vuePlayground: false,
       //linkCheck: "dev",

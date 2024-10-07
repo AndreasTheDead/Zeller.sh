@@ -16,6 +16,7 @@ tag:
 I wanted to use Azure DNS Zones for my personal domains. The problem I noticed was, that I cannot use a CName record at the root of a Domain. To host my Website and some more stuff at my home, where I have a dynamic IP adress, I needed to find a way to update a Azure DNS A-Record when my Public IP Adress changes.
 
 The solution I decided to use, was to create a powershell script which is scheduled and updates the DNS records on IP change.
+<!-- more -->
 
 ## Requirements
 
