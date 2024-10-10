@@ -10,8 +10,8 @@ export const DefaultNavbar = navbar([
     prefix: "/category/",
     children: [
       { text: "Powershell", icon: "code", link: "powershell/" },
-      { text: "Azure", icon: "cloud", link: "azure/" },
-      //{ text: "Intune", icon: "laptop", link: "/category/intune/" },
+      { text: "Cloud", icon: "cloud", link: "cloud/" },
+      { text: "Intune", icon: "laptop", link: "intune/" },
     ],
   }
 ]);
