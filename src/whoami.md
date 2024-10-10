@@ -34,6 +34,8 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 - Clean up Existing Windows Intune environment and take over management and part of the Packaging
 - Many Scripts to report little things in the AD to help us, keep a clean Active Directory
 - Deployment of Defender for Endpoint for Clients and Servers
+- Redesign of Android device management in Intune from company devices as BYOD to Company Owned fully managed and personally enabled Devices.
+- Designing and writing of API to automate Active Dircetory things from our ITSM solution.
 
 ## Homelab
 
@@ -44,6 +46,7 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 - Keeper Connection Manager for Remote Access to the Servers
 - Smarthome with Homeassistant
 - [Dynamic DNS via PowerShell script and AzureDNS](/article/powershell/dynamicazuredns.html)
+- [DNS management with git and a CI pipeline](/article/cloud/dnspipline.html)
 - This webpage
 - other small Apps like a Reverse Proxy, a recipe app, Jellyfin, phpIPAM...
 
