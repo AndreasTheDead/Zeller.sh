@@ -3,9 +3,10 @@ icon: code
 date: 2023-05-20
 category:
   - Powershell
-  - Azure
+  - Cloud
 tag:
   - DDNS
+  - Azure
   - AzureCLI
   - Powershell
   - Homelab
