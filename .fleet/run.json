@@ -1,0 +1,17 @@
+{
+    "configurations": [
+    {
+        "type": "npm",
+        "name": "Run Dev Server",
+        "command": "run",
+        "scripts": "docs:clean-dev",
+    },
+    {
+        "type": "npm",
+        "name": "Update Packages",
+        "command": "run",
+        "scripts": "docs:update-package",
+    },
+
+    ]
+}
