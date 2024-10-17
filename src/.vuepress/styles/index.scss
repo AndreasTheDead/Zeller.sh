@@ -1,1 +1,24 @@
-// place your custom styles here
+// --vp-c-accent: #b42000;
+p a {
+    color: light-dark(#a32b11, #e36d6d) 
+}
+
+ul a {
+    color: light-dark(#a32b11, #e36d6d) 
+}
+
+h2 a , h2 a.header-anchor{
+    color: light-dark(#b42000, #b42000) !important
+}
+
+h3 a , h3 a.header-anchor{
+    color: light-dark(#c34949, #af7d7d) !important
+}
+
+h4 a , h4 a.header-anchor{
+    color: light-dark(#c34949, #af7d7d) !important
+}
+
+h5 a , h5 a.header-anchor{
+    color: light-dark(#c34949, #af7d7d) !important
+}
