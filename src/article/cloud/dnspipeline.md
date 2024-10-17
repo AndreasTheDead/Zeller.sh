@@ -500,6 +500,7 @@ If your using the Example repository you can just commend in the required line.
 
 Now you have a fully functioning Infrastructure as code and CI/CD pipeline to manage your dns.
 
-## official documentation
+## Additional Links
 
 - [DNS Control Docs](https://docs.dnscontrol.org/)
+- [Example Repository](https://github.com/AndreasTheDead/DNSControl-Blueprint)
