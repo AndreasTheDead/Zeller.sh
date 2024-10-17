@@ -44,7 +44,7 @@ export default hopeTheme({
   //docsDir: "docs",
   docsDir: "src",
 
-  darkmode: "switch",
+  darkmode: "enable",
   //themeColor: {orange: "#b42000",
   //            blue: "#2196f3"},
   print: false,
