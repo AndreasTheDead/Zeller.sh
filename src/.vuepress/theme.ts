@@ -160,11 +160,6 @@ export default hopeTheme({
       mark: true,
       size: true
     },
-    
-    backToTop:{
-      progress: true,
-      threshold: 100
-    },
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
