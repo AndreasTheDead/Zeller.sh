@@ -20,6 +20,7 @@
     "@vuepress/plugin-markdown-image": "2.0.0-rc.52",
     "@vuepress/plugin-markdown-tab": "2.0.0-rc.52",
     "@vuepress/plugin-markdown-container": "2.0.0-rc.52",
+    "@vuepress/plugin-icon": "^2.0.0-rc.68",
     "chart.js": "^4.4.4",
     "mermaid": "11.3.0",
     "echarts": "^5.5.1",
