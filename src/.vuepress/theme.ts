@@ -10,8 +10,6 @@ export default hopeTheme({
     name: "Andreas Zeller",
     url: "/whoami.html",
   },
-
-  iconAssets: "fontawesome-with-brands",
   favicon: "/logo.png",
 
   //Navbar settings https://theme-hope.vuejs.press/config/theme/layout.html#navbar-config
@@ -41,14 +39,11 @@ export default hopeTheme({
   sidebar: false,
 
   pageInfo: ["Author", "Date", "Category", "Tag"],
-  //docsDir: "docs",
   docsDir: "src",
-
   darkmode: "enable",
-  //themeColor: {orange: "#b42000",
-  //            blue: "#2196f3"},
   print: false,
 
+  // MARK: Blog config
   blog: { //
     //sidebarDisplay: "always",
     description: "Product Expert IAM <br> Working on Intune, (Azure) Active Directory and whatever I find interest in.",
@@ -62,15 +57,57 @@ export default hopeTheme({
     },
   },
 
-  /*
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+  // MARK: markdown config
+  markdown: {
+    gfm: true,
+    footnote: true,
+    vPre: true,
+    include: false,
+    align: true,
+    attrs: true,
+    mark: true,
+    sup: true,
+    sub: true,
+    chartjs: true,
+    echarts: true,
+    flowchart: false,
+    mermaid: true,
+    demo: false,
+    vuePlayground: false,
+    figure: true,
+    imgLazyload: true,
+    imgMark: true,
+    imgSize: true,
+    stylize: [
+      {
+        matcher: "Recommended",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommended",
+            };
+        },
+      },
+    ],
+    playground: {
+      presets: ["ts", "vue"],
+    },
+    math: {
+      type: "katex"
+    },
+    codeTabs: true,
+    tabs: true,
+    highlighter: {
+      type: "shiki",
+      themes:{
+        light: "one-light",
+        dark: "one-dark-pro" 
+      },
     },
   },
-  */
-  
+  // MARK: plugin config
   plugins: {
     git:{
       contributors: false,
@@ -84,33 +121,14 @@ export default hopeTheme({
       },
       hotKeys: ['s','/']
     },
+    icon:{
+      assets: "fontawesome-with-brands"
+    },
     //blog: true,
     blog:{
       excerpt: true,
       excerptSeparator: "<!-- more -->",
       excerptLength: 150,
-    },
-    // backToTop: true,
-    /*
-    comment: {
-      // @ts-expect-error: You should generate and use your own comment service
-      provider: "Giscus",
-    },
-    */
-   /*
-    prismjs: {
-      themes: { 
-        light: "one-light",
-        dark: "one-dark" 
-      },
-      highlightLines: true,
-    },
-    */
-    shiki: {
-      themes:{
-        light: "one-light",
-        dark: "one-dark-pro" 
-      },
     },
     copyright: {
       global: false,
@@ -124,77 +142,14 @@ export default hopeTheme({
     components:{
       components: [
         "Badge",
-        "FontIcon",
         "PDF",
         "VidStack"
       ]
     },
-    /*comment: {
-      provider: "Waline",
-      serverURL: "https://comments.zeller.sh/",
-      dark: "body.theme-dark",
-      meta: ['nick','mail'],
-      requiredMeta: ['nick'],
-      login: "disable",
-      reaction: false,
-      wordLimit: 250
-    },*/
     comment: false,
     sitemap: {
       changefreq: "weekly",
       excludePaths: ['/404.html','/LegalNotice.html']
-    },
-
-    markdownMath: {
-      type: "katex"
-    },
-
-    markdownTab: {
-      codeTabs: true,
-      tabs: true
-    },
-
-    markdownImage: {
-      figure: true,
-      lazyload: true,
-      mark: true,
-      size: true
-    },
-
-    // all features are enabled for demo, only preserve features you need here
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      chart: true,
-      demo: false,
-      echarts: true,
-      flowchart: false,
-      gfm: true,
-      include: false,
-      mark: true,
-      mermaid: true,
-      footnote: true,
-      playground: {
-        presets: ["ts", "vue"],
-      },
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
-      sub: true,
-      sup: true,
-      vPre: true,
-      vuePlayground: false,
-      //linkCheck: "dev",
     },
   },
 });
