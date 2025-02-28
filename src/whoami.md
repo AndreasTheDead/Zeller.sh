@@ -54,7 +54,7 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 
 - Intune joined Gaming PC
 - QNAP TS-451D2 running TrueNAS Scale with 4x4TB Harddisk Space
-- HomeServer with I7-9700K and 64GB RAM running TrueNAS
+- HomeServer with I7-9700K and 64GB RAM running Proxmox
 - TP-Link EAP615-Wall
 - TP-Link TL-SG2218 v1.0
 - FRITZ!Box 7590 AX
@@ -66,5 +66,4 @@ In my free time, I mostly like to game or work on my Homelab, as well as, go on 
 - TrueNAS Scale
 - Active Directory Domain for Intune SSO to NAS
 - Pterodactyl
-- Keeper Connection Manager
 - Jellyfin
